@@ -70,6 +70,7 @@ public class requestController {
 
         return map;
     }
+
     @GetMapping("/get06/{id}")
     public Comment getById(@PathVariable("id") String id){
         Comment comment = new Comment();
@@ -221,8 +222,5 @@ public class requestController {
             return e.getMessage();
         }
     }
-
-
-    // http://localhost:8080/test/get01
 
 }
